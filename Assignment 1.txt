@@ -1,0 +1,108 @@
+
+							Exercise no. 1
+
+
+1. How HTTPS works :
+      *HTTPS uses an encryption protocol to encrypt communications.
+      *The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL).
+      *This protocol secures communications by using what’s known as an asymmetric public key infrastructure.
+      *This type of security system uses two different keys to encrypt communications between two parties:-
+
+  *The private key - this key is controlled by the owner of a website and it’s kept, as the reader may have speculated, private. 
+                     This key lives on a web server and is used to decrypt information encrypted by the public key.
+
+  *The public key - this key is available to everyone who wants to interact with the server in a way that’s secure.
+                    Information that’s encrypted by the public key can only be decrypted by the private key.
+
+  SSL - (Secured Sockets Layer) - SSL is a security protocol that provides privacy, authentication, and integrity to Internet communications.
+            SSL eventually evolved into Transport Layer Security (TLS).
+
+           *In order to provide a high degree of privacy, SSL encrypts data that is transmitted across the web. 
+              This means that anyone who tries to intercept this data will only see a garbled mix of characters that is nearly impossible to decrypt.
+         
+           *SSL initiates an authentication process called a handshake between two communicating devices to ensure that both devices are really who they claim to be. 
+
+
+
+
+2.  Diffrent HTTP method and how it works.
+
+  Http methods which are commonly used to communicate with the rest Api are :-
+
+	POST =   A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+	GET  =   The GET method is used to extract information from the given server using a given URI. 
+	         While using GET request, it should only extract data and should have no other effect on the data. 
+	         No Payload/Body required.
+
+	PUT  =   Replaces all current representations of the target resource with the uploaded content
+
+	DELETE=  Removes all current representations of the target resource given by a URI
+
+    
+    We can also call it as CRUD operations 
+	C-  create
+	R-  Retrieve
+	U - Update
+	D - Delete.
+
+3. Status Code :- It is a response issued by the server to the client request made to the server.
+    
+	1xx - Informational status
+	2xx - Sucess
+	3xx - Redirected.
+	4xx - Client side error
+	5xx - Server side error
+
+
+4 Diffrent type of web communication protocols.
+
+	1.Hyper Text Transfer Protocol (HTTP)
+                 2.Hyper Text Transfer Protocol Secure (HTTPS)
+	3.Simple Mail Transport Protocol (SMTP)
+	4.Transmission Control Protocol (TCP)
+                 5.Internet protocols (IP)
+ 	6.File Transfer protocol(FTP)
+	7.User Datagram protocol(UDP)
+	8.Post Office Protocol(POP)
+	9.Telnet
+                 10.Gopher
+
+ * Hyper Text Transfer Protocol(HTTP)- It is a stateless protocol. HTTP used for transferring data over a network. 
+			             *Most information that is sent over the Internet, including website content and API calls, uses the HTTP protocol.
+
+ * HTTPS :- It is referred as Hyper Text Transfer Protocol Secured, HTTPS uses an encryption protocol to encrypt communications.
+                  *The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL).
+                  *This protocol secures communications by using what’s known as an asymmetric public key infrastructure.
+
+ * SMTP :- It is reffered as Simple Mail Transport Protocol.SMTP is designed to send and distribute outgoing E-Mail.
+
+ *TCP :- It is reffered as Transmission control protocol. It divides any message into series of packets that are sent from source to destination and there it gets reassembled at the destination.
+
+ *IP :- It is reffered as Internet protocol.IP is designed explicitly as addressing protocol. It is mostly used with TCP. 
+         *The IP addresses in packets help in routing them through different nodes in a network until it reaches the destination system.
+
+ *FTP :- It is reffered as file trasfer protocol. It allows user to transfer the files over the network.
+
+ *UDP :- It is referred as User Datagram Protocol. 
+          *UDP is a substitute communication protocol to Transmission Control Protocol implemented primarily for creating loss-tolerating and low-latency linking between different applications.
+
+
+5.  Single-Page Application
+                -A single-page application is an app that works inside a browser and does not require page reloading during use.
+	 -We are using this type of applications every day. These are: Gmail, Google Maps, Facebook or GitHub.
+
+     pros:-    *It is Fast, as most resources(html,css,scripts), are only loaded once throughout in a lifetime of the application.
+	 *It is easy to make mobile application as the developers can reuse the same backend code for web application and mobile application.
+	
+     Cons:-   *Compared to the “traditional” application, SPA is less secure. Due to Cross-Site Scripting (XSS).
+	 *It is slow to download because heavy client frameworks are required to be loaded to the client.
+	 
+ Multi-Page Application -   Multiple-page applications work in a “traditional” way. 
+			  Every change eg. display the data or submit data back to server requests rendering a new page from the server in the browser.
+			  Clicking a connection may make another page open. In this way, every page should be included independently. 
+     
+     pros:- Since there are a wide range of pages, one catchphrase can be effortlessly composed on each page, not at all like in SPAs having just one page
+
+     cons:- The development becomes quite complex. The developer needs to use frameworks for either client and server side.
+               *Frontend and backend development are tightly coupled.
